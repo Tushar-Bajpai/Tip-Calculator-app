@@ -1,74 +1,67 @@
-# Tip-Calculator-app
+# 💰 Tip Calculator App
 
-A simple, responsive tip calculator & bill splitter built with vanilla HTML, CSS and JavaScript. Enter a bill amount, choose or enter a custom tip percentage, set the number of people and the app shows tip-per-person and total-per-person.
+![Design Preview](./preview.jpg)
 
-![App Screenshot](./tip-calculator-app-main/preview.jpg)
----
+<div align="center">
 
-## Live preview
-Open `index.html` in your browser or serve the folder with a local server.
+  ### [🚀 View Live Demo](https://your-project-name.vercel.app/)
 
-Example (PowerShell / Command Prompt):
-- cd to project folder:
-  - cd "c:\Users\ASUS\OneDrive\Desktop\Bill_calc\tip-calculator-app-main"
-- Start a simple HTTP server (Python):
-  - python -m http.server 8000
-- Visit: http://localhost:8000
+  [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://your-project-name.vercel.app/)
+  
+</div>
 
----
+## 📄 About The Project
 
-## Features
-- Calculate tip amount per person
-- Calculate total per person (bill + tip)
-- Pre-set tip buttons (5%, 10%, 15%, 25%, 50%) plus custom input
-- Responsive layout for mobile, tablet and desktop
-- Fixed logo at top that never overlaps the content
-- Accessible focus states and keyboard-friendly controls
-- Small footprint — no frameworks required
+This is a solution to the [Tip Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). The goal was to build a fully functional tip calculator that updates in real-time.
 
----
+**Users can:**
+- View the optimal layout for the app depending on their device's screen size (Responsive Design).
+- See hover states for all interactive elements on the page.
+- Calculate the correct tip and total cost of the bill per person.
+- Enter a custom percentage for the tip.
+- Reset the calculator with a single click.
 
-## Usage
-1. Enter the bill amount.
-2. Select a tip button or enter a custom tip percent.
-3. Enter the number of people.
-4. Read tip amount / person and total / person on the right panel.
-5. Click RESET to clear values.
+## 📸 Screenshot
 
----
+![App Screenshot](./Screenshot%202026-02-11%20000008.png)
+*(Note: Make sure this filename matches exactly what is in your folder!)*
 
-## Files & structure
-- index.html — main HTML page
-- styles.css — styles (responsive and accessibility-focused)
-- script.js — calculator logic (event handlers, validation)
-- /images — icons and logo used in UI
-- README.md — project documentation
+## 🛠️ Built With
 
----
+* **Semantic HTML5** - For structure and accessibility.
+* **CSS3 (Flexbox & Grid)** - For layout and responsive design.
+* **JavaScript (ES6)** - For the calculation logic and DOM manipulation.
 
-## Responsive & accessibility notes
-- Fluid typography and layout using CSS clamp() and CSS Grid/Flexbox
-- Container always positioned below the fixed logo using CSS variables
-- Inputs use visible focus styles for keyboard navigation
-- Tested on viewports: 320, 375, 414, 768, 1024, 1440
+## 💡 Key Features
 
----
+* **Real-time Calculation:** The totals update instantly as you type; no "Calculate" button needed.
+* **Input Validation:** Prevents users from entering zero for the number of people (shows an error border).
+* **Reset Functionality:** A convenient button to clear all fields and start over.
 
-## Development
-- Edit files in your preferred editor (VS Code recommended).
-- Live reload: use the Live Server extension or the Python server above.
-- Add unit tests or enhancements in `script.js` as needed.
+## 🚀 How to Run Locally
 
----
+If you want to run this project on your own machine:
 
-## Contributing
-PRs welcome. For small changes, open an issue with a short description and screenshots. Keep changes focused and include short rationale.
+1.  **Clone the repository**
+    ```bash
+    git clone [https://github.com/Tushar-Bajpai/Tip-Calculator-app.git](https://github.com/Tushar-Bajpai/Tip-Calculator-app.git)
+    ```
+2.  **Navigate to the project directory**
+    ```bash
+    cd Tip-Calculator-app
+    ```
+3.  **Open `index.html`**
+    Simply open the `index.html` file in your browser, or use 'Live Server' in VS Code.
 
----
+## 👤 Author
 
-## License
-Use as you wish. Include a license file if you want to open-source with specific terms.
+**Tushar Bajpai**
+- GitHub: [@Tushar-Bajpai](https://github.com/Tushar-Bajpai)
+- LinkedIn: [Your LinkedIn Profile](Add_Link_Here)
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Tushar-Bajpai/Tip-Calculator-app/issues).
 
 ---
-
-Made with ♥ by Tushar
+*If you liked this project, please give it a ⭐️!*
