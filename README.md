@@ -1,6 +1,6 @@
 # 💰 Tip Calculator App
 
-![Design Preview](./preview.jpg)
+![Design Preview](./tip-calculator-app-main/preview.jpg)
 
 <div align="center">
 
