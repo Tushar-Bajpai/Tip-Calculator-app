@@ -25,16 +25,6 @@
 4. Read "Tip Amount / person" and "Total / person".
 5. Click RESET to clear values.
 
-## Run locally
-Open a terminal and run:
-
-```bash
-cd "c:\Users\ASUS\OneDrive\Desktop\Bill_calc\tip-calculator-app-main"
-# Option A: open index.html directly in your browser
-# Option B: serve with a simple HTTP server (recommended)
-python -m http.server 8000
-# then open http://localhost:8000
-```
 
 
 ## Project structure
@@ -75,9 +65,8 @@ If you want to run this project on your own machine:
     Simply open the `index.html` file in your browser, or use 'Live Server' in VS Code.
 
 
-## 🤝 Contributing
+## 🤝 Contributions
 
-## Contribution
 Contributions are welcome. Suggested workflow:
 1. Fork the repository.
 2. Create a feature branch: git checkout -b feature/your-feature
