@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+    line-height: 1.15;
+    font-size: 16px;
+}
+
+.logo-box{
+    position: absolute;
+    top: 12px;                 /* distance from top of container */
+    left: 50%;
+    transform: translateX(-50%); /* center horizontally */
+    z-index: 5;
+}   
+
+.logo-box .logo{
+    display: block;
+    max-width: 120px; /* adjust as needed */
+    height: auto;
+}
+
+body {
+    position: relative; /* added for placing logo */
+ background-color:hsl(185, 41%, 84%) ;
+ font-family: monospace;
+  height: 100vh;
+  font-size: 16px;
+  line-height: 1.15;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+   display: flex;
+  gap: 40px;
+  width: min(700px, 92%); /* fluid width: desktop uses 700px, smaller screens get 92% */
+  height: auto;           /* allow container to grow on small screens */
+  padding: 20px;
+  border-radius: 25px;
+  background-color: hsl(189, 47%, 97%);
+  
+}
+
+
+
+
+.tip-display-right{
+    flex:1;
+    border-radius: 15px;
+    background-color: hsl(183, 100%, 15%);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    color: white;
+
+}
+
+
+.reset
+{
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    color:hsl(183, 65%, 40%);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: auto;
+    text-align: center;
+
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.below-txt{
+    color: hsl(186, 14%, 43%);
+}
+
+.amount{
+    font-size: 24px;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+}
+
+.tip-display-left{
+    flex:1;
+    border-radius: 15px;
+    /* background-color: hsl(188, 28%, 74%); */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 20px;
+    
+}
+
+.title{
+    color: hsl(186, 14%, 43%);
+     font-size: 14px;
+}
+   .head{
+    display: flex;
+    justify-content: space-between;
+    
+    }
+
+    .bill-input{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .number-of-people .people-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 7px;
+    }
+
+    .people-header .error-msg {
+        font-size: 12px;
+        text-align: right;
+    }
+
+    .error-msg {
+       color: #E17457; 
+        display: none;  /* HIDDEN INITIALLY */
+        float: right;   
+        
+        }
+
+    .error-msg.show {
+        visibility: visible;
+
+    }
+    
+    .select-tip{
+    width: 100%;
+    display: block; /* was flex - use block so the grid (.tip-btns) can size columns equally */
+    gap: 16px;
+    
+    }
+
+    .tip-btns{
+     display: grid;
+   
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    width: 100%;
+    height: 120px;
+}
+
+    .tip-btn{    
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+     background-color: hsl(183, 100%, 15%);
+     color: white;
+  
+    width: 100%;
+    height: 45px;
+    min-width: 0; /* allow content to not force column growth */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    }
+    
+.tip-btn input{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 8px;
+    border: none;
+    outline: none;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+    
+input[type="text"]{
+    text-align: right;
+    padding: 10px;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    
+   
+}
+
+.input-wrapper {
+  position: relative;
+     width: 100%;
+}
+
+.icon-input{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    display: block;
+}
+
+.input-wrapper input[type="text"]{
+    display: block;
+    width: 100%;
+    height: 44px;               /* consistent control height */
+    padding: 8px 12px 8px 44px; /* reserve space for icon on the left */
+    box-sizing: border-box;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+}
+
+
+.tip-btn:hover {
+    background-color: hsl(183, 72%, 47%);
+}
+
+.reset:hover {
+    background-color: hsl(185, 41%, 74%);
+    color: hsl(183, 65%, 40%);
+}
+
+.tip-btn input:active, .tip-btn input:focus  {
+    background-color: hsl(185, 41%, 84%);
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+.input-wrapper input[type="text"]:active, .input-wrapper input[type="text"]:focus {
+    background-color: hsl(185, 41%, 84%);
+    border: 1px solid hsl(183, 100%, 15%);
+}
+
+
+/* responsiveness */
+
+
+/* Mobile / small screens: stack panels and scale controls for 375px designs */
+@media (max-width: 420px) {
+  body { padding-top: 60px; } /* reserve logo space so it won't overlap the card */
+
+  .container {
+    flex-direction: column;
+    gap: 18px;
+    width: 92%;
+    padding: 16px;
+  }
+
+  .tip-display-left,
+  .tip-display-right {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .tip-btns {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on narrow screens */
+    grid-auto-rows: minmax(44px, auto);
+    gap: 12px;
+    height: auto;
+  }
+
+  .tip-btn,
+  .tip-btn input,
+  .input-wrapper input[type="text"] {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  .amount { font-size: 20px; }
+  .title { font-size: 13px; }
+  .input-wrapper input[type="text"]{ padding: 8px 12px 8px 44px; }
+}
+
+/* keep the desktop logo spacing rule */
+@media (min-width: 1440px) {
+  .logo-box { position: fixed; top: 40px; left: 50%; transform: translateX(-50%); z-index: 999; }
+  .container {margin-top: 50px; }
+}
+
+
+
+

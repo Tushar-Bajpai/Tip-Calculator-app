@@ -1,0 +1,331 @@
+
+:root{
+  --page-bg: hsl(185, 41%, 84%);
+  --card-bg: hsl(189, 47%, 97%);
+  --accent: hsl(172, 67%, 45%);
+  --dark: hsl(183, 100%, 15%);
+  --muted: hsl(186, 14%, 43%);
+  --muted-2: hsl(184, 14%, 56%);
+  --gap: 1.5rem;
+}
+
+/* Fluid base font size */
+html {
+  font-size: clamp(14px, 1.6vw, 16px);
+}
+
+/* reset & base */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+    font-family: 'Space Mono', monospace;
+    line-height: 1.15;
+}
+.logo-box{
+    position: absolute;
+    top: 12px;                 
+    left: 50%;
+    transform: translateX(-50%); 
+    z-index: 5;
+}   
+.logo-box .logo{
+    display: block;
+    max-width: 120px; 
+    height: auto;
+}
+body {
+    position: relative;
+    background-color: var(--page-bg);
+    font-family: 'Space Mono', monospace;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.15;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    padding: 0;
+}
+
+/* container */
+.container {
+   display: flex;
+   gap: clamp(0.75rem, 1.8vw, 2.5rem);
+   width: min(900px, 92%);
+   padding: clamp(0.75rem, 1.8vw, 2rem);
+   border-radius: 1.5rem;
+   background-color: var(--card-bg);
+   align-items: stretch;
+   box-shadow: 0 10px 30px rgba(3,40,40,0.08);
+   min-height: 320px;
+}
+
+/* left/right panels */
+.tip-display-right{
+    flex:1 1 0;
+    min-width: 0;
+    border-radius: 15px;
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    color: white;
+}
+
+.tip-display-left{
+    flex:1 1 0;
+    min-width: 0;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 12px;
+    padding: 20px;
+}
+
+/* reset button */
+.reset {
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    color:hsl(183, 65%, 40%);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin-top: auto;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* small text */
+.below-txt{
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+.amount{
+    font-size: clamp(1.25rem, 3.2vw, 1.5rem);
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.title{
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+/* layout helpers */
+.head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bill-input{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.number-of-people .people-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+}
+
+.people-header .error-msg {
+    font-size: 12px;
+    text-align: right;
+}
+
+.error-msg {
+   color: #E17457; 
+    display: none;
+    float: right;   
+}
+
+.error-msg.show {
+    visibility: visible;
+}
+
+/* tip selection */
+.select-tip{
+    width: 100%;
+    display: block;
+    gap: 16px;
+}
+
+.tip-btns{
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-auto-rows: minmax(44px, auto);
+ gap: 20px;
+ width: 100%;
+}
+
+.tip-btn{    
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-color: var(--dark);
+    color: white;
+    width: 100%;
+    height: 45px;
+    min-width: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tip-btn input{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 0 8px;
+    border: none;
+    outline: none;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+/* inputs */
+.input-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.icon-input{
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    display: block;
+}
+
+.input-wrapper input[type="text"]{
+    display: block;
+    width: 100%;
+    height: 44px;
+    padding: 8px 12px 8px 44px;
+    box-sizing: border-box;
+    background-color: hsl(185, 41%, 84%);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    text-align: right;
+    min-width: 0;
+}
+
+/* generic input styles */
+input[type="text"]{
+    text-align: right;
+    padding: 10px;
+    background-color:hsl(185, 41%, 84%);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+/* hover & focus */
+.tip-btn:hover {
+    background-color: hsl(183, 72%, 47%);
+}
+
+.reset:hover {
+    background-color: hsl(185, 41%, 74%);
+    color: hsl(183, 65%, 40%);
+}
+
+.tip-btn input:active, .tip-btn input:focus  {
+    background-color: hsl(185, 41%, 84%);
+    border: 1px solid var(--dark);
+}
+
+.input-wrapper input[type="text"]:active, .input-wrapper input[type="text"]:focus {
+    background-color: hsl(185, 41%, 84%);
+    border: 1px solid var(--dark);
+    box-shadow: 0 0 0 3px rgba(23, 189, 173, 0.06);
+}
+
+/* Accessibility focus visible */
+:focus {
+  outline: none;
+}
+:focus-visible {
+  outline: 3px solid rgba(23,189,173,0.18);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* responsiveness */
+
+/* Tablet breakpoint */
+@media (max-width: 1024px) {
+  .container { width: min(820px, 94%); }
+  .tip-btns { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+}
+
+/* Mobile / small screens */
+@media (max-width: 420px) {
+  body { padding-top: 60px; }
+
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    width: 92%;
+    padding: 1rem;
+  }
+
+  .tip-display-left,
+  .tip-display-right {
+    width: 100%;
+    border-radius: 12px;
+  }
+
+  .tip-btns {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(44px, auto);
+    gap: 12px;
+    height: auto;
+  }
+
+  .tip-btn,
+  .tip-btn input,
+  .input-wrapper input[type="text"] {
+    height: 44px;
+    font-size: 0.875rem;
+  }
+
+  .amount { font-size: 1.25rem; }
+  .title { font-size: 0.8rem; }
+  .input-wrapper input[type="text"]{ padding: 8px 12px 8px 44px; }
+}
+
+/* Large desktop tweaks */
+@media (min-width: 1440px) {
+  .logo-box { position: fixed; top: 40px; left: 50%; transform: translateX(-50%); z-index: 999; }
+  .container { margin-top: 50px; width: min(1000px, 80%); padding: 2rem; }
+}
+
+/* ensure no overflow from long text */
+.tip-display-left, .tip-display-right, .container, .tip-btns {
+  word-wrap: break-word;
+}
+
