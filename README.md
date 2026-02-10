@@ -6,7 +6,7 @@
 
   ### [🚀 View Live Demo](https://your-project-name.vercel.app/)
 
-  [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://your-project-name.vercel.app/)
+  [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://tip-calculator-app-ten-mu.vercel.app/)
   
 </div>
 
