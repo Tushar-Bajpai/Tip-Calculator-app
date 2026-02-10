@@ -1,113 +1,73 @@
-# Tip Calculator App
+# Tip-Calculator-app
 
-A small, responsive tip calculator and bill splitter built with HTML, CSS and JavaScript. Enter a bill amount, choose or enter a custom tip percentage, set the number of people — the app shows tip per person and total per person.
+A simple, responsive tip calculator & bill splitter built with vanilla HTML, CSS and JavaScript. Enter a bill amount, choose or enter a custom tip percentage, set the number of people and the app shows tip-per-person and total-per-person.
 
-Preview: ./preview.jpg
+---
 
-## Features
-- Calculate tip amount per person and total per person
-- Preset tip buttons (5, 10, 15, 25, 50) + custom tip input
-- Reset button to clear inputs
-- Responsive layout for mobile and desktop
-- Accessible focus states and simple validation for zero people
+## Live preview
+Open `index.html` in your browser or serve the folder with a local server.
 
-## Demo
-Open `index.html` in your browser or run a lightweight local server (recommended).
+Example (PowerShell / Command Prompt):
+- cd to project folder:
+  - cd "c:\Users\ASUS\OneDrive\Desktop\Bill_calc\tip-calculator-app-main"
+- Start a simple HTTP server (Python):
+  - python -m http.server 8000
+- Visit: http://localhost:8000
 
-Run locally (Windows / PowerShell):
-- Using Python:
-  python -m http.server 5500
-  (then open http://localhost:5500)
-- Using Node (if installed):
-  npx http-server -p 5500
-
-Or use the VS Code Live Server extension and open the workspace folder.
-
-## Usage
-1. Enter the bill amount in the Bill field.
-2. Click a preset tip button or type a percentage into the Custom input.
-3. Enter the number of people splitting the bill.
-4. The Tip Amount / person and Total / person update automatically.
-5. Click RESET to clear all fields.
-
-## Accessibility & Responsiveness
-- Uses rem/clamp-based sizing for fluid typography.
-- Fixed logo at top with container offset to avoid overlap.
-- Breakpoints included for mobile (≤420px), tablet (≤1024px) and large screens (≥1440px).
-- Keyboard focus visible on interactive elements.
-
-## Project structure
-- index.html — app markup
-- styles.css — styles, responsive rules
-- script.js — calculation logic and UI handlers
-- images/ — assets (logo, icons)
-- README.md — project documentation
-
-## Extending / Contributing
-- Add unit tests for calculation functions in `script.js`.
-- Improve validation (non-numeric input handling).
-- Add currency selection and formatting options.
-
-Contributions welcome — open an issue or a PR.
-
-## License
-MIT — feel free to reuse and modify.
-
-Made with ♥ by _
-``` ````// filepath: c:\Users\ASUS\OneDrive\Desktop\Bill_calc\tip-calculator-app-main\README.md
-# Tip Calculator App
-
-A small, responsive tip calculator and bill splitter built with HTML, CSS and JavaScript. Enter a bill amount, choose or enter a custom tip percentage, set the number of people — the app shows tip per person and total per person.
-
-Preview: ./preview.jpg
+---
 
 ## Features
-- Calculate tip amount per person and total per person
-- Preset tip buttons (5, 10, 15, 25, 50) + custom tip input
-- Reset button to clear inputs
-- Responsive layout for mobile and desktop
-- Accessible focus states and simple validation for zero people
+- Calculate tip amount per person
+- Calculate total per person (bill + tip)
+- Pre-set tip buttons (5%, 10%, 15%, 25%, 50%) plus custom input
+- Responsive layout for mobile, tablet and desktop
+- Fixed logo at top that never overlaps the content
+- Accessible focus states and keyboard-friendly controls
+- Small footprint — no frameworks required
 
-## Demo
-Open `index.html` in your browser or run a lightweight local server (recommended).
-
-Run locally (Windows / PowerShell):
-- Using Python:
-  python -m http.server 5500
-  (then open http://localhost:5500)
-- Using Node (if installed):
-  npx http-server -p 5500
-
-Or use the VS Code Live Server extension and open the workspace folder.
+---
 
 ## Usage
-1. Enter the bill amount in the Bill field.
-2. Click a preset tip button or type a percentage into the Custom input.
-3. Enter the number of people splitting the bill.
-4. The Tip Amount / person and Total / person update automatically.
-5. Click RESET to clear all fields.
+1. Enter the bill amount.
+2. Select a tip button or enter a custom tip percent.
+3. Enter the number of people.
+4. Read tip amount / person and total / person on the right panel.
+5. Click RESET to clear values.
 
-## Accessibility & Responsiveness
-- Uses rem/clamp-based sizing for fluid typography.
-- Fixed logo at top with container offset to avoid overlap.
-- Breakpoints included for mobile (≤420px), tablet (≤1024px) and large screens (≥1440px).
-- Keyboard focus visible on interactive elements.
+---
 
-## Project structure
-- index.html — app markup
-- styles.css — styles, responsive rules
-- script.js — calculation logic and UI handlers
-- images/ — assets (logo, icons)
+## Files & structure
+- index.html — main HTML page
+- styles.css — styles (responsive and accessibility-focused)
+- script.js — calculator logic (event handlers, validation)
+- /images — icons and logo used in UI
 - README.md — project documentation
 
-## Extending / Contributing
-- Add unit tests for calculation functions in `script.js`.
-- Improve validation (non-numeric input handling).
-- Add currency selection and formatting options.
+---
 
-Contributions welcome — open an issue or a PR.
+## Responsive & accessibility notes
+- Fluid typography and layout using CSS clamp() and CSS Grid/Flexbox
+- Container always positioned below the fixed logo using CSS variables
+- Inputs use visible focus styles for keyboard navigation
+- Tested on viewports: 320, 375, 414, 768, 1024, 1440
+
+---
+
+## Development
+- Edit files in your preferred editor (VS Code recommended).
+- Live reload: use the Live Server extension or the Python server above.
+- Add unit tests or enhancements in `script.js` as needed.
+
+---
+
+## Contributing
+PRs welcome. For small changes, open an issue with a short description and screenshots. Keep changes focused and include short rationale.
+
+---
 
 ## License
-MIT — feel free to reuse and modify.
+Use as you wish. Include a license file if you want to open-source with specific terms.
+
+---
 
 Made with ♥ by Tushar
