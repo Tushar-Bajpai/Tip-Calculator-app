@@ -2,7 +2,7 @@
 
 A simple, responsive tip calculator & bill splitter built with vanilla HTML, CSS and JavaScript. Enter a bill amount, choose or enter a custom tip percentage, set the number of people and the app shows tip-per-person and total-per-person.
 
-![App Screenshot](./tip-calculator-app-main/screenshot.png)
+![App Screenshot](./tip-calculator-app-main/preview.jpg)
 ---
 
 ## Live preview
