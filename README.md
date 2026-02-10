@@ -10,21 +10,42 @@
   
 </div>
 
-## 📄 About The Project
 
-This is a solution to the [Tip Calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). The goal was to build a fully functional tip calculator that updates in real-time.
+## Features
+- Tip amount per person and total per person
+- Preset tip buttons (5%, 10%, 15%, 25%, 50%) + custom tip input
+- Responsive layout (mobile → desktop)
+- Fixed header logo that does not overlap content
+- Keyboard accessible and visible focus states
 
-**Users can:**
-- View the optimal layout for the app depending on their device's screen size (Responsive Design).
-- See hover states for all interactive elements on the page.
-- Calculate the correct tip and total cost of the bill per person.
-- Enter a custom percentage for the tip.
-- Reset the calculator with a single click.
+## Quick usage
+1. Enter the bill amount.
+2. Select a preset tip or enter a custom percentage.
+3. Enter the number of people.
+4. Read "Tip Amount / person" and "Total / person".
+5. Click RESET to clear values.
 
-## 📸 Screenshot
+## Run locally
+Open a terminal and run:
 
-![App Screenshot](./Screenshot%202026-02-11%20000008.png)
-*(Note: Make sure this filename matches exactly what is in your folder!)*
+```bash
+cd "c:\Users\ASUS\OneDrive\Desktop\Bill_calc\tip-calculator-app-main"
+# Option A: open index.html directly in your browser
+# Option B: serve with a simple HTTP server (recommended)
+python -m http.server 8000
+# then open http://localhost:8000
+```
+
+
+## Project structure
+- index.html — main markup and semantic structure
+- styles.css — responsive styles (variables, breakpoints, accessibility)
+- script.js — calculator logic, event handlers and validation
+- images/ — logo, icons and screenshot assets
+- README.md — this file
+
+---
+
 
 ## 🛠️ Built With
 
@@ -53,15 +74,20 @@ If you want to run this project on your own machine:
 3.  **Open `index.html`**
     Simply open the `index.html` file in your browser, or use 'Live Server' in VS Code.
 
-## 👤 Author
-
-**Tushar Bajpai**
-- GitHub: [@Tushar-Bajpai](https://github.com/Tushar-Bajpai)
-- LinkedIn: [Your LinkedIn Profile](Add_Link_Here)
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Tushar-Bajpai/Tip-Calculator-app/issues).
+## Contribution
+Contributions are welcome. Suggested workflow:
+1. Fork the repository.
+2. Create a feature branch: git checkout -b feature/your-feature
+3. Make focused changes and commit with a clear message.
+4. Push branch and open a Pull Request against the main branch.
+5. Include screenshots and a short description of changes in the PR.
+6. For bugs: open an issue with steps to reproduce and screenshots.
 
+
+---
+Made with ♥ by Tushar
 ---
 *If you liked this project, please give it a ⭐️!*
