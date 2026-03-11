@@ -69,7 +69,7 @@ If you want to run this project on your own machine:
 
 Contributions are welcome. Suggested workflow:
 1. Fork the repository.
-2. Create a feature branch: git checkout -b feature/your-feature
+2. Create a feature branch: git checkout -b feature/your-feature.
 3. Make focused changes and commit with a clear message.
 4. Push branch and open a Pull Request against the main branch.
 5. Include screenshots and a short description of changes in the PR.
