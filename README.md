@@ -20,7 +20,7 @@
 
 ## Quick usage
 1. Enter the bill amount.
-2. Select a preset tip or enter a custom percentage.
+2. Select a preset tip or enter a custom percents.
 3. Enter the number of people.
 4. Read "Tip Amount / person" and "Total / person".
 5. Click RESET to clear values.
