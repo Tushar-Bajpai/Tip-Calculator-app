@@ -62,7 +62,7 @@ If you want to run this project on your own machine:
     cd Tip-Calculator-app
     ```
 3.  **Open `index.html`**
-    Simply open the `index.html` file in your browser, or use 'Live Server' in VS Code.
+    Simply open the `index.html` file in your browser, or use 'Live Server' in VS Code
 
 
 ## 🤝 Contributions
