@@ -42,7 +42,7 @@
 * **Semantic HTML5** - For structure and accessibility.
 * **CSS3 (Flexbox & Grid)** - For layout and responsive design.
 * **JavaScript (ES6)** - For the calculation logic and DOM manipulation.
-
+  
 ## 💡 Key Features
 
 * **Real-time Calculation:** The totals update instantly as you type; no "Calculate" button needed.
