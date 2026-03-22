@@ -32,7 +32,7 @@
 - styles.css — responsive styles (variables, breakpoints, accessibility)
 - script.js — calculator logic, event handlers and validation
 - images/ — logo, icons and screenshot assets
-- README.md — this file
+- README.md — this file.
 
 ---
 
