@@ -13,7 +13,7 @@
 
 ## Features
 - Tip amount per person and total per person
-- Preset tip buttons (5%, 10%, 15%, 25%, 50%) + custom tip input
+- Preset tip buttons (5%, 10%, 15%, 25%, 50%) + custom the input
 - Responsive layout (mobile → desktop)
 - Fixed header logo that does not overlap content
 - Keyboard accessible and visible focus states
