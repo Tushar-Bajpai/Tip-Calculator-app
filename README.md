@@ -17,7 +17,7 @@
 - Responsive layout (mobile → desktop)
 - Fixed header logo that does not overlap content
 - Keyboard accessible and visible focus states
-
+  
 ## Quick usage
 1. Enter the bill amount.
 2. Select a preset tip or enter a custom percents.
